@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(181, 139, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn {
+    font-size: 1em;
+    padding: 1em 2em;
+    margin: 1em;
+    background-color: rebeccapurple;
+    color: white;
+    border: 1px solid rebeccapurple;
+    border-radius: 0.5em;
+}
