@@ -1,0 +1,1 @@
+![Auto Write Text](./auto-write-text-gif.gif)
