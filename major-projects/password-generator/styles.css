@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rebeccapurple;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#container {
+    width: 300px;
+    padding: 0.75rem;
+    background-color: rgb(41, 10, 73);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#header {
+    font-size: 1.5rem;
+}
+
+#pwdContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rebeccapurple;
+    color: white;
+    position: relative;
+}
+
+#pwdContainer #pwd {
+    height: 2rem;
+    padding: 0.4rem;
+}
+
+#pwdContainer #copy button {
+    background-color: white;
+    color: rgb(29, 2, 56);
+    font-family: inherit;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    padding: 0 0.25rem 0.25rem;
+    transform: translate(0, -95%);
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+    opacity: 0;
+}
+
+#pwdContainer #copy button:active {
+    border: 1px solid black;
+}
+
+#pwdContainer:hover #copy button {
+    opacity: 1;
+}
+
+#userInput {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0.25rem;
+}
+
+.form-control {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-control .control input[type="checkbox"]:checked {
+    accent-color: blue !important;
+}
+
+
+#upperCaseFlag input, #lowerCaseFlag, #numbersFlag, #symbolsFlag {
+    background-color: rebeccapurple;
+    color: white;
+}
+
+#generate {
+    width: 100%;
+}
+
+#generate button {
+    width: 100%;
+    background-color: #ecb602;
+    color: rebeccapurple;
+    border: none;
+    font-size: inherit;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+}
